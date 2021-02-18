@@ -1,9 +1,24 @@
 {
-    "dependencies": {
-        "body-parser": "^1.19.0",
-        "cors": "^2.8.5",
-        "express": "^4.17.1",
-        "newsapi": "^2.4.1",
-        "node-fetch": "^2.6.1"
+    "name": "backendd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node script.js",
+        "n": "nodemon script.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    {
+        "dependencies": {
+            "body-parser": "^1.19.0",
+            "cors": "^2.8.5",
+            "express": "^4.17.1",
+            "newsapi": "^2.4.1",
+            "node-fetch": "^2.6.1",
+            "fetch": "^1.1.0"
+
+        }
     }
-}
