@@ -4,22 +4,8 @@ const bodyparser = require("body-parser");
 const cors = require('cors');
 const fetch = require('node-fetch');
 const express = require('express');
-const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('13e53703faca41e19cab7e7f46366014');
-const {
-    Translate
-} = require('@google-cloud/translate').v2;
-const translate = new Translate();
-const {
-    HostedModel
-} = require('@runwayml/hosted-models');
 
 
-const fs = require('fs');
-
-const model = new HostedModel({
-    url: 'https://gpt-2-9a3f8ee1.hosted-models.runwayml.cloud/v1/    ',
-});
 
 const app = express();
 const port = process.env.PORT || 80;
