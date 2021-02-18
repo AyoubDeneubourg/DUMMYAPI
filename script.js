@@ -41,7 +41,40 @@ console.log('yes');
 app.use(cors());
 
 app.get('/news', function(req, res) {
-    res.send({ testerr: "aaaa" });
+    res.send({
+        status: "ok",
+        totalResults: 255191,
+        articles: [{
+                source: {
+                    id: null,
+                    name: "Business Insider South Africa"
+                },
+                author: null,
+                title: "Businessinsider.co.za | SA is the first country to roll out Johnson & Johnson vaccine - what you need to know about the jab",
+                description: "The vaccine has so far proved to be 100% effective in preventing death and hospitalisation due to Covid-19 - also in its South African trial.",
+                keywords: ["test1", "test2", "test3", "test4", "test5", "test6", ],
+                url: "https://www.businessinsider.co.za/covid-19-vaccine-johnson-johnson-what-we-know-2020-12",
+                urlToImage: "http://cdn.24.co.za/files/Cms/General/d/7842/183c945bd6ad47ccbc27faece6708676.jpg",
+                publishedAt: "2021-02-17T10:08:12Z",
+                content: "<ul><li>On Wednesday, South Africa became the first country in the world to roll out the Johnson &amp; Johnson vaccine.</li><li>The vaccine has so far proved to be 100% effective in preventing death … [+4839 chars]",
+                newContent: "The vaccine has so far proved to be 100"
+            },
+            {
+                source: {
+                    id: null,
+                    name: "The Japan Times"
+                },
+                author: "Kaz Nagatsuka",
+                title: "Japan, B. League in tough spot after cancellation of FIBA Asia Cup qualifying window",
+                description: "Skipping the qualifiers — when they resume — altogether is not an option.",
+                url: "https://www.japantimes.co.jp/sports/2021/02/17/basketball/japan-bleague-fiba-asia-cup/",
+                urlToImage: "https://cdn-japantimes.com/wp-content/uploads/2021/02/np_file_70089-870x489.jpeg",
+                publishedAt: "2021-02-17T10:07:48Z",
+                content: "B. League Chairman Shinji Shimada says calling up players to the national team for the FIBA Asia Cup qualifiers during the B. League season has created a difficult situation for both his league and t… [+3914 chars]",
+                newContent: "The vaccine has so far proved to be 100fgdpjgfdoigjdfoigijgiodt"
+            }
+        ]
+    });
     /*   console.log('yes2');
       newsapi.v2.everything({
           q: 'covid OR corona',
